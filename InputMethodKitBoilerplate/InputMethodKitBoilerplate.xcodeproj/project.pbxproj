@@ -11,6 +11,7 @@
 		58093AC81D1A39BC004AECBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AC71D1A39BC004AECBB /* main.m */; };
 		58093ACA1D1A39BC004AECBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58093AC91D1A39BC004AECBB /* Assets.xcassets */; };
 		58093AD81D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */; };
+		58093AE41D1A4BC6004AECBB /* IMKBoilerplateInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AE31D1A4BC6004AECBB /* IMKBoilerplateInputController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,8 @@
 		58093AD31D1A39BC004AECBB /* InputMethodKitBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputMethodKitBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputMethodKitBoilerplateTests.m; sourceTree = "<group>"; };
 		58093AD91D1A39BC004AECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58093AE21D1A4BC6004AECBB /* IMKBoilerplateInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMKBoilerplateInputController.h; sourceTree = "<group>"; };
+		58093AE31D1A4BC6004AECBB /* IMKBoilerplateInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMKBoilerplateInputController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 			children = (
 				58093AC31D1A39BC004AECBB /* AppDelegate.h */,
 				58093AC41D1A39BC004AECBB /* AppDelegate.m */,
+				58093AE21D1A4BC6004AECBB /* IMKBoilerplateInputController.h */,
+				58093AE31D1A4BC6004AECBB /* IMKBoilerplateInputController.m */,
 				58093AC91D1A39BC004AECBB /* Assets.xcassets */,
 				58093ACE1D1A39BC004AECBB /* Info.plist */,
 				58093AC61D1A39BC004AECBB /* Supporting Files */,
@@ -199,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58093AC81D1A39BC004AECBB /* main.m in Sources */,
+				58093AE41D1A4BC6004AECBB /* IMKBoilerplateInputController.m in Sources */,
 				58093AC51D1A39BC004AECBB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

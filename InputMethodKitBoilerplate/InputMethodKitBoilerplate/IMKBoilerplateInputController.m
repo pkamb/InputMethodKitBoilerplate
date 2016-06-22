@@ -46,4 +46,35 @@ extern IMKCandidates *candidatesWindow;
  -(BOOL)handleEvent:(NSEvent*)event client:(id)sender;
  */
 
+#pragma mark IMKServerInput
+
+- (NSUInteger)recognizedEvents:(id)sender {
+    return NSKeyDownMask | NSKeyUpMask | NSFlagsChangedMask;
+}
+
+- (BOOL)handleEvent:(NSEvent *)event client:(id)sender {
+    
+    BOOL handled = NO;
+    
+    switch (event.type) {
+        case NSKeyDown: {
+            NSLog(@"NSKeyDown event");
+            break;
+        }
+        case NSKeyUp: {
+            NSLog(@"NSKeyUp event");
+            break;
+        }
+        case NSFlagsChanged: {
+            NSLog(@"NSFlagsChanged event");
+            break;
+        }
+        default:
+            handled = NO;
+            break;
+    }
+    
+    return handled;
+}
+
 @end

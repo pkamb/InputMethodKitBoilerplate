@@ -10,6 +10,22 @@
 
 @implementation IMKBoilerplateInputController
 
+extern IMKCandidates *candidatesWindow;
+
+- (id)initWithServer:(IMKServer *)server delegate:(id)delegate client:(id)inputClient {
+    if (self = [super initWithServer:server delegate:delegate client:inputClient]) {
+        
+        NSDictionary *attributes = @{NSFontAttributeName: [NSFont systemFontOfSize:16],
+                                     IMKCandidatesOpacityAttributeName: @(0.8),
+                                     IMKCandidatesSendServerKeyEventFirst: @NO,
+                                     };
+        
+        [candidatesWindow setAttributes:attributes];
+    }
+    
+    return self;
+}
+
 /*!
  @protocol    IMKServerInput
  @abstract    Informal protocol which is used to send user events to an input method.

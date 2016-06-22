@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58093AC51D1A39BC004AECBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AC41D1A39BC004AECBB /* AppDelegate.m */; };
+		58093AC81D1A39BC004AECBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AC71D1A39BC004AECBB /* main.m */; };
+		58093ACA1D1A39BC004AECBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58093AC91D1A39BC004AECBB /* Assets.xcassets */; };
+		58093ACD1D1A39BC004AECBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58093ACB1D1A39BC004AECBB /* MainMenu.xib */; };
+		58093AD81D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58093AD41D1A39BC004AECBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58093AB81D1A39BC004AECBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58093ABF1D1A39BC004AECBB;
+			remoteInfo = InputMethodKitBoilerplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58093AC01D1A39BC004AECBB /* InputMethodKitBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputMethodKitBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58093AC31D1A39BC004AECBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58093AC41D1A39BC004AECBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58093AC71D1A39BC004AECBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58093AC91D1A39BC004AECBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58093ACC1D1A39BC004AECBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		58093ACE1D1A39BC004AECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58093AD31D1A39BC004AECBB /* InputMethodKitBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputMethodKitBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputMethodKitBoilerplateTests.m; sourceTree = "<group>"; };
+		58093AD91D1A39BC004AECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58093ABD1D1A39BC004AECBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58093AD01D1A39BC004AECBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58093AB71D1A39BC004AECBB = {
+			isa = PBXGroup;
+			children = (
+				58093AC21D1A39BC004AECBB /* InputMethodKitBoilerplate */,
+				58093AD61D1A39BC004AECBB /* InputMethodKitBoilerplateTests */,
+				58093AC11D1A39BC004AECBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58093AC11D1A39BC004AECBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58093AC01D1A39BC004AECBB /* InputMethodKitBoilerplate.app */,
+				58093AD31D1A39BC004AECBB /* InputMethodKitBoilerplateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58093AC21D1A39BC004AECBB /* InputMethodKitBoilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				58093AC31D1A39BC004AECBB /* AppDelegate.h */,
+				58093AC41D1A39BC004AECBB /* AppDelegate.m */,
+				58093AC91D1A39BC004AECBB /* Assets.xcassets */,
+				58093ACB1D1A39BC004AECBB /* MainMenu.xib */,
+				58093ACE1D1A39BC004AECBB /* Info.plist */,
+				58093AC61D1A39BC004AECBB /* Supporting Files */,
+			);
+			path = InputMethodKitBoilerplate;
+			sourceTree = "<group>";
+		};
+		58093AC61D1A39BC004AECBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58093AC71D1A39BC004AECBB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58093AD61D1A39BC004AECBB /* InputMethodKitBoilerplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */,
+				58093AD91D1A39BC004AECBB /* Info.plist */,
+			);
+			path = InputMethodKitBoilerplateTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58093ABF1D1A39BC004AECBB /* InputMethodKitBoilerplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58093ADC1D1A39BC004AECBB /* Build configuration list for PBXNativeTarget "InputMethodKitBoilerplate" */;
+			buildPhases = (
+				58093ABC1D1A39BC004AECBB /* Sources */,
+				58093ABD1D1A39BC004AECBB /* Frameworks */,
+				58093ABE1D1A39BC004AECBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputMethodKitBoilerplate;
+			productName = InputMethodKitBoilerplate;
+			productReference = 58093AC01D1A39BC004AECBB /* InputMethodKitBoilerplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58093AD21D1A39BC004AECBB /* InputMethodKitBoilerplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58093ADF1D1A39BC004AECBB /* Build configuration list for PBXNativeTarget "InputMethodKitBoilerplateTests" */;
+			buildPhases = (
+				58093ACF1D1A39BC004AECBB /* Sources */,
+				58093AD01D1A39BC004AECBB /* Frameworks */,
+				58093AD11D1A39BC004AECBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58093AD51D1A39BC004AECBB /* PBXTargetDependency */,
+			);
+			name = InputMethodKitBoilerplateTests;
+			productName = InputMethodKitBoilerplateTests;
+			productReference = 58093AD31D1A39BC004AECBB /* InputMethodKitBoilerplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58093AB81D1A39BC004AECBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Peter Kamb";
+				TargetAttributes = {
+					58093ABF1D1A39BC004AECBB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					58093AD21D1A39BC004AECBB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 58093ABF1D1A39BC004AECBB;
+					};
+				};
+			};
+			buildConfigurationList = 58093ABB1D1A39BC004AECBB /* Build configuration list for PBXProject "InputMethodKitBoilerplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58093AB71D1A39BC004AECBB;
+			productRefGroup = 58093AC11D1A39BC004AECBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58093ABF1D1A39BC004AECBB /* InputMethodKitBoilerplate */,
+				58093AD21D1A39BC004AECBB /* InputMethodKitBoilerplateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58093ABE1D1A39BC004AECBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58093ACA1D1A39BC004AECBB /* Assets.xcassets in Resources */,
+				58093ACD1D1A39BC004AECBB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58093AD11D1A39BC004AECBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58093ABC1D1A39BC004AECBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58093AC81D1A39BC004AECBB /* main.m in Sources */,
+				58093AC51D1A39BC004AECBB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58093ACF1D1A39BC004AECBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58093AD81D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58093AD51D1A39BC004AECBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58093ABF1D1A39BC004AECBB /* InputMethodKitBoilerplate */;
+			targetProxy = 58093AD41D1A39BC004AECBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58093ACB1D1A39BC004AECBB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58093ACC1D1A39BC004AECBB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58093ADA1D1A39BC004AECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		58093ADB1D1A39BC004AECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		58093ADD1D1A39BC004AECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InputMethodKitBoilerplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.InputMethodKitBoilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58093ADE1D1A39BC004AECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InputMethodKitBoilerplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.InputMethodKitBoilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58093AE01D1A39BC004AECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InputMethodKitBoilerplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.InputMethodKitBoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InputMethodKitBoilerplate.app/Contents/MacOS/InputMethodKitBoilerplate";
+			};
+			name = Debug;
+		};
+		58093AE11D1A39BC004AECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InputMethodKitBoilerplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate.InputMethodKitBoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InputMethodKitBoilerplate.app/Contents/MacOS/InputMethodKitBoilerplate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58093ABB1D1A39BC004AECBB /* Build configuration list for PBXProject "InputMethodKitBoilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58093ADA1D1A39BC004AECBB /* Debug */,
+				58093ADB1D1A39BC004AECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58093ADC1D1A39BC004AECBB /* Build configuration list for PBXNativeTarget "InputMethodKitBoilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58093ADD1D1A39BC004AECBB /* Debug */,
+				58093ADE1D1A39BC004AECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58093ADF1D1A39BC004AECBB /* Build configuration list for PBXNativeTarget "InputMethodKitBoilerplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58093AE01D1A39BC004AECBB /* Debug */,
+				58093AE11D1A39BC004AECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58093AB81D1A39BC004AECBB /* Project object */;
+}

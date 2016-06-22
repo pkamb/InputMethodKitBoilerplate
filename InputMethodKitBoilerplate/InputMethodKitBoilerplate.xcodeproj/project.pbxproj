@@ -10,7 +10,6 @@
 		58093AC51D1A39BC004AECBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AC41D1A39BC004AECBB /* AppDelegate.m */; };
 		58093AC81D1A39BC004AECBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AC71D1A39BC004AECBB /* main.m */; };
 		58093ACA1D1A39BC004AECBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58093AC91D1A39BC004AECBB /* Assets.xcassets */; };
-		58093ACD1D1A39BC004AECBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58093ACB1D1A39BC004AECBB /* MainMenu.xib */; };
 		58093AD81D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		58093AC41D1A39BC004AECBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		58093AC71D1A39BC004AECBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58093AC91D1A39BC004AECBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		58093ACC1D1A39BC004AECBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		58093ACE1D1A39BC004AECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58093AD31D1A39BC004AECBB /* InputMethodKitBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputMethodKitBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58093AD71D1A39BC004AECBB /* InputMethodKitBoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputMethodKitBoilerplateTests.m; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				58093AC31D1A39BC004AECBB /* AppDelegate.h */,
 				58093AC41D1A39BC004AECBB /* AppDelegate.m */,
 				58093AC91D1A39BC004AECBB /* Assets.xcassets */,
-				58093ACB1D1A39BC004AECBB /* MainMenu.xib */,
 				58093ACE1D1A39BC004AECBB /* Info.plist */,
 				58093AC61D1A39BC004AECBB /* Supporting Files */,
 			);
@@ -184,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				58093ACA1D1A39BC004AECBB /* Assets.xcassets in Resources */,
-				58093ACD1D1A39BC004AECBB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,17 +220,6 @@
 			targetProxy = 58093AD41D1A39BC004AECBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		58093ACB1D1A39BC004AECBB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58093ACC1D1A39BC004AECBB /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		58093ADA1D1A39BC004AECBB /* Debug */ = {

@@ -28,5 +28,9 @@
 	<string>Copyright © 2016 Peter Kamb. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>InputMethodConnectionName</key>
+	<string>InputMethodKit_Boilerplate_Connection</string>
+	<key>InputMethodServerControllerClass</key>
+	<string>IMKBoilerplateInputController</string>
 </dict>
 </plist>

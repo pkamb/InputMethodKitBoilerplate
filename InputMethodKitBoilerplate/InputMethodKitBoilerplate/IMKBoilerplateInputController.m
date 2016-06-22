@@ -73,8 +73,33 @@ extern IMKCandidates *candidatesWindow;
             handled = NO;
             break;
     }
+
+    BOOL useSetCandidateData = YES;
+    if (useSetCandidateData) {
+        NSArray *candidates = @[@"candidate #1 via `setCandidateData:`",
+                                @"candidate #2 via `setCandidateData:`",
+                                @"candidate #3 via `setCandidateData:`",
+                                ];
+        
+        [candidatesWindow setCandidateData:candidates];
+    }
+    
+    [candidatesWindow show:kIMKLocateCandidatesBelowHint];
+    [candidatesWindow updateCandidates];
     
     return handled;
+}
+
+#pragma mark IMKCandidates Candidate Window
+
+- (NSArray *)candidates:(id)sender {
+    
+    NSArray *candidates = @[@"candidate #1 via `candidates:`",
+                            @"candidate #2 via `candidates:`",
+                            @"candidate #3 via `candidates:`",
+                            ];
+    
+    return candidates;
 }
 
 @end

@@ -62,7 +62,12 @@ extern IMKCandidates *candidatesWindow;
             break;
         }
         case NSKeyUp: {
-            NSLog(@"NSKeyUp event");
+            
+            // rdar://21376535
+            // Input Method Kit cannot catch NSKeyUp events.
+            
+            NSLog(@"Handling Input Method Kit NSKeyUp Event! Was rdar://21376535 fixed!?!");
+            
             break;
         }
         case NSFlagsChanged: {

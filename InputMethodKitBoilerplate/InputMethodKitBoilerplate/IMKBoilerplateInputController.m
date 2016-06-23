@@ -84,9 +84,9 @@ extern IMKCandidates *candidatesWindow;
         // The `else` case below, which calls out to the `candidates:` delegate method, does correctly display candidates.
         
         
-        NSArray *candidates = @[@"candidate #1 via `setCandidateData:`",
-                                @"candidate #2 via `setCandidateData:`",
-                                @"candidate #3 via `setCandidateData:`",
+        NSArray *candidates = @[@"candidate #1 via `setCandidateData:`! Is rdar://26868067 fixed?",
+                                @"candidate #2 via `setCandidateData:`! Is rdar://26868067 fixed?",
+                                @"candidate #3 via `setCandidateData:`! Is rdar://26868067 fixed?",
                                 ];
         
         [candidatesWindow setCandidateData:candidates];

@@ -76,16 +76,30 @@ extern IMKCandidates *candidatesWindow;
 
     BOOL useSetCandidateData = YES;
     if (useSetCandidateData) {
+        
+        // rdar://26868067
+        // IMKCandidates `setCandidateData:` method not working in place of IMKInputController `candidates:` delegate method
+
+        // In this case, where `useSetCandidateData = YES`, the candidates I'm setting below are not displayed.
+        // The `else` case below, which calls out to the `candidates:` delegate method, does correctly display candidates.
+        
+        
         NSArray *candidates = @[@"candidate #1 via `setCandidateData:`",
                                 @"candidate #2 via `setCandidateData:`",
                                 @"candidate #3 via `setCandidateData:`",
                                 ];
         
         [candidatesWindow setCandidateData:candidates];
+        
+        [candidatesWindow show:kIMKLocateCandidatesBelowHint];
+        
+    } else {
+        
+        // Calling `updateCandidates` will result in a call being made to the IMKInputController's `candidates:` method.
+        [candidatesWindow updateCandidates];
+        
+        [candidatesWindow show:kIMKLocateCandidatesBelowHint];
     }
-    
-    [candidatesWindow show:kIMKLocateCandidatesBelowHint];
-    [candidatesWindow updateCandidates];
     
     return handled;
 }

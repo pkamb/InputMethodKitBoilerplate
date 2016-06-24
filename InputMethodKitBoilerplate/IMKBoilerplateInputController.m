@@ -7,6 +7,7 @@
 //
 
 #import "IMKBoilerplateInputController.h"
+#import <Cocoa/Cocoa.h>
 
 @implementation IMKBoilerplateInputController
 
@@ -59,6 +60,29 @@ extern IMKCandidates *candidatesWindow;
     switch (event.type) {
         case NSKeyDown: {
             NSLog(@"NSKeyDown event");
+
+            
+            // Test for rdar://21463962
+            // Type Option-E to test
+            if (event.keyCode == kVK_ANSI_E) {
+                if (![event.charactersIgnoringModifiers isEqualToString:@"e"] &&
+                    ![event.charactersIgnoringModifiers isEqualToString:@"E"]) {
+                    
+                    // rdar://21463962
+                    // Input Method Kit reports wrong values for NSEvent `charactersIgnoringModifiers` in `handleEvent:client:`
+                    
+                    // Option-E should produce the dead key "´" in U.S. QWERTY. Get this via `event.characters`.
+                    // The base key value "e" or "E" should be available via `event.charactersIgnoringModifiers`.
+                    
+                    // But within Input Method Kit's `handleEvent:client:` method, `event.charactersIgnoringModifiers`
+                    // still reports the same "´" reported by `event.characters`. Reproducable with the "dead keys" (e,i,n,u).
+
+                    NSLog(@"rdar://21463962 - Input Method Kit reports wrong values for NSEvent `charactersIgnoringModifiers` in `handleEvent:client:`");
+                    NSLog(@"event.keyCode: %hu | event.characters: %@ | event.charactersIgnoringModifiers: %@", event.keyCode, event.characters, event.charactersIgnoringModifiers);
+                    NSLog(@"event.charactersIgnoringModifiers for this event should report 'e' or 'E'");
+                }
+            }
+            
             break;
         }
         case NSKeyUp: {

@@ -9,6 +9,12 @@
 #import "IMKBoilerplateInputController.h"
 #import <Cocoa/Cocoa.h>
 
+@interface IMKBoilerplateInputController ()
+
+@property (nonatomic, assign) BOOL overrideIMKInputControllerMethodsToAvoidCrashUnderARC;
+
+@end
+
 @implementation IMKBoilerplateInputController
 
 extern IMKCandidates *candidatesWindow;
@@ -22,6 +28,8 @@ extern IMKCandidates *candidatesWindow;
                                      };
         
         [candidatesWindow setAttributes:attributes];
+        
+        self.overrideIMKInputControllerMethodsToAvoidCrashUnderARC = NO;
     }
     
     return self;
@@ -62,6 +70,8 @@ extern IMKCandidates *candidatesWindow;
             NSLog(@"NSKeyDown event");
 
             
+            
+            
             // Test for rdar://21463962
             // Type Option-E to test
             if (event.keyCode == kVK_ANSI_E) {
@@ -82,6 +92,33 @@ extern IMKCandidates *candidatesWindow;
                     NSLog(@"event.charactersIgnoringModifiers for this event should report 'e' or 'E'");
                 }
             }
+            
+            
+            
+            
+            // Test for rdar://
+            // Type 'F' key to test
+            if (event.keyCode == kVK_ANSI_F) {
+                
+                // If project is using ARC, the superclass implementations of `updateComposition`, `cancelComposition`, and `selectionRange`
+                // will crash the Input Method Kit app. If these methods are not implemented on the IMKInputController subclass, they will
+                // be called on `super` and the app will crash under ARC.
+                
+                // When ARC is not enabled on the project, allowing `super` to call these methods (rather than overriding via the IMKInputController
+                // subclass) works as intended.
+                
+                // Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+                // Exception Codes:       KERN_INVALID_ADDRESS at 0x000007f8bc8f0b00
+                // Exception Note:        EXC_CORPSE_NOTIFY
+                
+                [self updateComposition];
+                [self commitComposition:sender];
+                
+                handled = YES;
+            }
+            
+            
+            
             
             break;
         }
@@ -131,6 +168,48 @@ extern IMKCandidates *candidatesWindow;
     }
     
     return handled;
+}
+
+#pragma mark IMKServerInput Text Composition and Input
+
+- (id)composedString:(id)sender {
+    NSString *randomCharacter = [[[NSProcessInfo processInfo] globallyUniqueString] substringWithRange:NSMakeRange(0, 1)];
+
+    NSString *composedString = randomCharacter;
+    
+    return [[NSAttributedString alloc] initWithString:composedString];
+}
+
+- (void)updateComposition {
+    if (!self.overrideIMKInputControllerMethodsToAvoidCrashUnderARC) {
+        [super updateComposition];
+        return;
+    }
+    
+    [[self client] setMarkedText:[self composedString:self] selectionRange:[self selectionRange] replacementRange:[self replacementRange]];
+}
+
+- (void)cancelComposition {
+    if (!self.overrideIMKInputControllerMethodsToAvoidCrashUnderARC) {
+        [super cancelComposition];
+        return;
+    }
+    
+    [[self client] insertText:[self originalString:self] replacementRange:[self replacementRange]];
+}
+
+- (NSRange)selectionRange {
+    if (!self.overrideIMKInputControllerMethodsToAvoidCrashUnderARC) {
+        return [super selectionRange];
+    }
+    
+    return NSMakeRange(NSNotFound, NSNotFound);
+}
+
+- (void)commitComposition:(id)sender {
+    NSString *composition = [self composedString:sender];
+    
+    [[self client] insertText:composition replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 }
 
 #pragma mark IMKCandidates Candidate Window
